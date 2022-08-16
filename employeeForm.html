@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Creation Form </title>
+    <style>
+        form {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="registerForm" method="post" action="/">
+        <table border="1px" align="center"cellpadding="15px" cellspacing="10px">
+            <caption>Employee Account Creation Form</caption>
+            <tr>
+                <td><label for="userName">User Name:</label></td>
+                <td><input type="text" id="userName" name="userName"></td>
+            </tr>
+            <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName"></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Phone Number:</label></td>
+                <td><input type="number" id="number"></td>
+            </tr>
+            <tr>
+                <td><label>Interests:</label></td>
+                <td><input type="checkbox" value="machine">Machine
+                    <input type="checkbox" value="aeronaut">Aeronaut
+                    <input type="checkbox" value="artificial">Artificial
+                </td>
+            </tr>
+            <tr>
+                <td><label>Date of Joining</label></td>
+                <td><input type="date"></td>
+                <!--Date Time Local(datetime-local)-->
+            </tr>
+            <tr>
+                <td><label>Was Previously Employed?</label></td>
+                <td><input type="radio" value="yes">Yes
+                    <input type="radio" value="no">No
+                </td>
+            </tr>
+            <tr>
+                <td><label>Location:</label></td>
+                <td><select>
+                        <option value="choose your content">Choose Your Location</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><textarea rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
