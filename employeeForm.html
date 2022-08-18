@@ -19,7 +19,7 @@
             <caption>Employee Account Creation Form</caption>
             <tr>
                 <td><label for="userName">User Name:</label></td>
-                <td><input type="text" id="userName" name="userName"></td>
+                <td><input type="text" id="userName" name="userName" required></td>
             </tr>
             <tr>
                 <td><label for="firstName">First Name:</label></td>
@@ -27,41 +27,45 @@
             </tr>
             <tr>
                 <td><label for="lastName">Last Name:</label></td>
-                <td><input type="text" id="lastName"></td>
+                <td><input type="text" id="lastName" name="lastName"></td>
             </tr>
             <tr>
                 <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email"></td>
+                <td><input type="email" id="email" name="email"></td>
             </tr>
             <tr>
                 <td><label for="password">Password:</label></td>
-                <td><input type="password" id="password"></td>
+                <td><input type="password" id="password" name="password"></td>
             </tr>
             <tr>
                 <td><label for="number">Phone Number:</label></td>
-                <td><input type="number" id="number"></td>
+                <td><input type="number" id="number" name="number"></td>
+            </tr>
+            <tr>
+                <td><label for="url">URL :</label></td>
+                <td><input type="url" id="url" name="url"></td>
             </tr>
             <tr>
                 <td><label>Interests:</label></td>
-                <td><input type="checkbox" value="machine">Machine
+                <td><input type="checkbox" value="machine" name="machine">Machine
                     <input type="checkbox" value="aeronaut">Aeronaut
                     <input type="checkbox" value="artificial">Artificial
                 </td>
             </tr>
             <tr>
                 <td><label>Date of Joining</label></td>
-                <td><input type="date"></td>
+                <td><input type="date" name="date"></td>
                 <!--Date Time Local(datetime-local)-->
             </tr>
             <tr>
                 <td><label>Was Previously Employed?</label></td>
-                <td><input type="radio" value="yes">Yes
+                <td><input type="radio" value="yes" name="yes">Yes
                     <input type="radio" value="no">No
                 </td>
             </tr>
             <tr>
                 <td><label>Location:</label></td>
-                <td><select>
+                <td><select id="location" name="location">
                         <option value="choose your content">Choose Your Location</option>
                         <option value="bangalore">Bangalore</option>
                         <option value="hyderabad">Hyderabad</option>
@@ -70,7 +74,7 @@
             </tr>
             <tr>
                 <td><label>Address:</label></td>
-                <td><textarea rows="4" cols="30"></textarea></td>
+                <td><textarea rows="4" cols="30" id="address" name="address"></textarea></td>
             </tr>
             <tr>
                 <td><input type="submit"></td>
