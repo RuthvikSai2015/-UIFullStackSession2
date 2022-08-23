@@ -1,0 +1,18 @@
+#content1{
+    text-align: center;
+    border:2px solid red;
+    width:100%;
+}
+#content2{
+   border:3px solid lightblue;
+   width:49%;
+   float:left;
+}
+#content3{
+    border:3px solid lightgreen;
+    width:50%;
+    float:right;
+}
+#content4{
+    border:4px solid darkblue;
+}

@@ -9,9 +9,27 @@
     <!--External -->
     <title>CSS Concepts</title>
     <style>
-        p {
+        html{
+            background-color: light green;
+        }
+        p,img {
+           
+            /*Internal*/
             color: red;
-            /*Inline*/
+            border: 5px solid#b2b289; 
+              margin:40px;
+        }
+        h1{
+            color:blue;
+        }
+        /* #header1,#header3{
+            border:2px dashed green;
+        } */
+        .header-class{
+            border:2px solid red;
+        }
+        #header1{
+            padding:20px
         }
     </style>
 </head>
@@ -26,9 +44,14 @@
               width: 100%;
               height: 200px;
               font-weight: bolder;  
-              border: 5px solid #e12222; 
     ">Learn CSS from Beginning</p>
     <!--Inline-->
+    <img id="Image1" style="padding:10px;" src="../../nature2.jpg" height="300px" width="300px">
+    <img class="header-class" style="padding:10px " src="../../nature3.jpg" height="300px" width="300px">
+    <img style="padding:10px;" src="../../nature4.jpg" height="300px" width="300px">
+    <h1 id="header1" class="header-class ">Header1</h1>
+    <h1 id="header2">Header2</h1>
+    <h1 id="header3" class="header-class">Header3</h1>
 </body>
 
 </html>
