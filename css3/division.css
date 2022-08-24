@@ -15,4 +15,12 @@
 }
 #content4{
     border:4px solid darkblue;
+    width:100%;
+    clear:both;
+}
+#content2-1{
+    border:4px solid green;
+}
+#content2-1-1{
+    border:4px solid pink;
 }
