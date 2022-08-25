@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 text-overflow property</title>
+<style>
+    p {
+        width: 400px;
+        padding: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        background: #f2f2f2;
+    }
+    p.clipped {
+        text-overflow: clip;
+    }
+    p.ellipses {
+        text-overflow: ellipsis;
+    }
+</style>
+</head>
+<body>
+	<h1>Text-overflow Effect</h1>        
+	<h2>Clip the text at the limit of the content area</h2>
+    <p class="clipped">CSS is a Style Sheet Language for formatting the document content 
+     (written in HTML or other markup language). You might be interested 
+     by the CSS Working Group wiki too.</p>
+    <h2>Render an ellipsis ("...") to represent clipped text</h2>
+    <p class="ellipses">CSS is a Style Sheet Language for formatting the document content 
+     (written in HTML or other markup language). You might be interested 
+     by the CSS Working Group wiki too.</p>
+</body>
+</html>
