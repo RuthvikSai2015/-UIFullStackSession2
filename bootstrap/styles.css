@@ -1,0 +1,12 @@
+.bg-dark{
+    background-color: darkblue !important;
+}
+.myClass{
+    font-size: 50px !important;
+}
+.position-absolute{
+    width: 2em;
+    height: 2em;
+    background-color: #212529;
+    border-radius: .25rem;
+}
