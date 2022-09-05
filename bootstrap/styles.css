@@ -1,3 +1,7 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+     font-family: 'Roboto', sans-serif;
+}
 .bg-dark{
     background-color: darkblue !important;
 }
@@ -9,4 +13,14 @@
     height: 2em;
     background-color: #212529;
     border-radius: .25rem;
+}
+.navbar-brand{
+    color:white !important;
+}
+.carousel-item img{
+    height:300px !important
+} 
+.row img{
+    width:150px;
+    height:150px;
 }
