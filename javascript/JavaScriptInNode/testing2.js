@@ -3,4 +3,4 @@ var age = 100;
         console.log("valid");
    }else{
        console.log("not valid");
-    }		a
+    }		
