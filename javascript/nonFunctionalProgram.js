@@ -29,11 +29,12 @@
 function addition(num1,num2) {   
     var addResult;      //function body
     addResult = num1+num2;
-    console.log(typeof(num1));
-    console.log(addResult);
+    // console.log(typeof(num1));
+     console.log(addResult);
   }
   //calling function
-  addition("savitha","ramesh","radha");
-  addition(40,20);
-  addition(55,45);
-  addition(67,56);
+  // addition("savitha","ramesh","radha");
+  // addition(40,20);
+  // addition(55,45);
+  // addition(67,56);
+  console.log(addition(10,20));
