@@ -1250,6 +1250,9 @@ Control Statements
 	4. Extensibility is simple
 	5. Modularity(easy to organize and maintain)
 	
+	  Calling Function
+	  Called Function
+	  Parameter List v/s Argument List
 	1.Function Declarations
 	2.Function Expressions
 	3.Arrow Functions
@@ -1357,6 +1360,22 @@ Control Statements
 	6. What browsers client supports and responsive
 	7. Performance application
     8. Code review and refactoring the code
+	
+=====================================================================================
+   Scope => visibility
+   Local Variable v/s Global Variable 
+   
+   Hoisting => using the variables before declaring them
+    
+   var v/s const v/s let 
+
+   1. We can do redeclaration using var but using let we cannot do redeclaration
+   2. Hoisting is overcome in let 
+   3. let is block level scoped whereas var is not block level scoped
+   
+
+	
+	
 		
 		
 		
