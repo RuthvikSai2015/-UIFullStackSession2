@@ -61,7 +61,7 @@ function one(){
         let v2=20;
         console.log("inside if, ",v1,v2);
     }
-    console.log("outside if-- ",v1,v2);
+    // console.log("outside if-- ",v1,v2);
 }
 // function two(){
 //     let b;
