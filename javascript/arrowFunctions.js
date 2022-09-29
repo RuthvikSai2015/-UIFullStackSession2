@@ -50,8 +50,13 @@
 // square(2);
 
 //Arrow functions with two parameter and with return value
-let multiplication = (n1,n2) => n1*n2;
-let x = multiplication(100,20);
-console.log(x);
+// let multiplication = (n1,n2) => n1*n2;
+// let x = multiplication(100,20);
+// console.log(x);
+
+// let square = num => console.log(Math.pow(num,2));
+// let x = square(2);
+// console.log(x);
 
 //Task: try with many paramters
+

@@ -1250,16 +1250,18 @@ Control Statements
 	4. Extensibility is simple
 	5. Modularity(easy to organize and maintain)
 	
-	  Calling Function
-	  Called Function
-	  Parameter List v/s Argument List
-	1.Function Declarations
-	2.Function Expressions
-	3.Arrow Functions
-	4.Nested Functions
-	5.IIFE 
-	6.Recursion Functions
-	7.Callback functions
+	1.Calling Function
+	2.Called Function
+	3.Use of "function" keyword
+	4.Parameter List v/s Argument List
+	5.Function Preparation ways :4 ways
+	6.Function Declarations
+	7.Function Expressions
+	8.Arrow Functions/Anonymous Functions/Lambda functions
+	9.Nested Functions
+	10.IIFE 
+	11.Recursion Functions
+	12.Callback functions
 	
 	function is a set of statements which can be called multiple times
 	
@@ -1373,7 +1375,54 @@ Control Statements
    2. Hoisting is overcome in let 
    3. let is block level scoped whereas var is not block level scoped
    
+   Javascript is Synchronous and its Single Threaded language 
+   
+   Nested Functions:
+            function inside function
+	function functionName(){ //Outer Function
+	          function function2Name(){ //Inner Functions
+			  }
+	}
+   
+   function averageMarks(html, css, js) //main outer function{
 
+		function totalMarks(html, css, js) //outer function1 {
+			
+			function sample() //inner function{
+			}
+			return (html + css + js);
+		}
+		return totalMarks(html, css, js);
+    }
+	
+	Function Expression : = operator has to come immediately 
+	
+=================================================================================
+    IIFE => Immediately invoked function expressions
+	
+	Function Expression v/s IIFE
+	
+	1. in IIFE called function and calling function are together,whereas in Function Expression they are seperate 
+	2. in function expression = (operator) is not executed immediately whereas in IIFE it 
+	    is executed immediately  while returning the value 
+
+    11.Recursion Functions
+	   function calling itself 
+	   function one(){                       function one(){
+	   
+	    ......                                    one();
+		
+	   }                                      }
+	   one();                                 one();
+	   
+	   PS : Print factorial of a number
+	   PS : Print the factors of number using recursion
+	   
+
+	    
+		    
+	   
+	   
 	
 	
 		
