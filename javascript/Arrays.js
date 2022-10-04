@@ -56,7 +56,27 @@ function doSomethingNew(){
 }
 //doSomethingNew();
 function doSomethingNew1(){
-    let array = [10,20,30,40,50,60,70,80,90];
-    console.log(array.slice(3,7));
+    let array = [10,20,30,40,50,10,20,30,50,50,90];
+    //console.log(array.slice(3,7));
+    console.log(array.indexOf(10)); // 0
+    console.log(array.indexOf(5)); // -1 
+    // if(array.indexOf(20) != -1){
+    //    console.log("present")
+    // }else{
+    //    console.log("not present");
+    // }
+    console.log(array.lastIndexOf(50)); // 9
+
 }
 doSomethingNew1();
+function show(element){
+    console.log(element);
+}
+function doSomethingNew2(){
+    let arrayA= [10,20,30,40,50,60,70,80];
+  //  arrayA.forEach(show);
+    arrayA.forEach((element) => {
+        console.log(element);
+    })
+}
+doSomethingNew2();
