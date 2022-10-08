@@ -1418,9 +1418,138 @@ Control Statements
 	   PS : Print factorial of a number
 	   PS : Print the factors of number using recursion
 	   
+  Callback functions => passing function as arguments to another function is known as callbacks
+  
+  ======================================================================================
 
-	    
+    Array is used to store multiple elements in single variable 
+
+     Array index starts from 0
+ 
+     what is Array()
+     how to create Array?
+	      1. let array1 = [] || [1,2,3,4]
+		  2. let array1 = new Array();
+     length property 
+     how to acess Array elements first ,second , for
+     how to modify array element?
+     const Arrays
+	   with const Arrays re-assignment is not possible
+	   updating particular index is possible 
+     Array Methods
+       ADD REMOVE => push() ,pop()  => act at end of the array
+	              => unshift(),shift() => act at start of array 
+				  
+	   Task : check return types of unshift and shift 
+	   concat(),sort(),slice(),tostring()
+       reverse()
+       indexOf(), lastIndexOf()
+       forEach() , map() , filter() , reduce(),
+       every(), some() => returns boolean value 
+	   find ()  
+       splice()	=> only will change the original array (add,delete,add and delete)
+	   , join()    
+	   
+	   PS : if the element present in array continue or else
+	   
+	   Array Packing and Unpacking 
+	   
+	   //Array Packing
+	     let a = 10;
+		 let b = true;
+		 let c = "Apple";
+		 let array1 = [a,b,c]; 
+		 
+	   // Array Unpacking 
+	      let x,y,z ;
+		  [x,y,z] = array1;
+		   console.log(x);
+		   console.log(y);
+		   console.log(z);
+		   
+		array unpacking using rest operator(...) 
+		
+================================================================================
+    Strings 
+	      => Array/Group/Collection/Sequence of Characters
+		  
+	Strings can be prepared in 2 ways
+	   1. let myString = "Apple";
+	   2. let myString = new String("Apple");
+	   
+	   Strings can be represented in 3 ways
+	   1. using single quote('')
+	   2. using double quote("")
+	   3. using back ticks(``)
+	   
+	   Today session is on 'Strings'
+       Today session is on "Strings"
+  
+      String Templates 
+          using back tiks we can bind expression in strings
+
+      String Methods 
+          length , charAt(),
+		  charCodeAt() => returns ascii value of character in given string
+		  toLowerCase(), toUpperCase()
+		  replace(old,new) => only first occurence from left side 
+		  replaceAll(old,new) => all the occurences
+		  repeat(count) => repeats the string with specified count
+		  startsWith(prefix) => it returns true if prefix matches
+		  endsWith(suffix)  => it returns true if suffix matches
+		  search(value) => starting index of Value
 		    
+		  https://www.programiz.com/javascript/library/string
+		  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+		  
+		
+      "Apple".length;
+		5
+		"Apple".charAt(0)
+		"A"
+		"Apple".charAt(1)
+		"p"
+		"Apple".charAt(2)
+		"p"
+		"Apple".charAt(3)
+		"l"
+		"Apple".charAt(4)
+		"e"
+		"Apple".charAt(5)
+		""
+		"Apple".charAt(8)
+		""
+		"Apple".charAt(-1)
+		""
+		65
+		"Apple".charCodeAt('A')
+		65
+		"Apple".charCodeAt(8)
+		NaN
+		"Apple".charCodeAt('u')
+		65
+		"Apple".charCodeAt('O')
+		65
+		"App123pple".charCodeAt(3)
+		49
+		"App123pple".charCodeAt(4)
+		50
+		"App[]pple".charCodeAt(4)
+		93
+		"Apple".toLowerCase();
+		"apple"
+		"Apple".toUpperCase();
+		"APPLE"
+		"Apple".replace('p','q');
+		"Aqple"
+		"Apple".replaceAll('p','q');
+		"Aqqle"
+		  
+	   
+	   
+	   
+	   
+	   
 	   
 	   
 	

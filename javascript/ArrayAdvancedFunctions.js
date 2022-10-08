@@ -19,7 +19,7 @@ let studentAges = [15,10,8,12,20,9];
 
 console.log(studentAges.some(age => age>18));
 
-studentAges = [20,22];
+//studentAges = [20,22];
 
 console.log(studentAges.every(age => age>18));
 
