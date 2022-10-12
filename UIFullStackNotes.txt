@@ -1487,6 +1487,20 @@ Control Statements
   
       String Templates 
           using back tiks we can bind expression in strings
+		  
+		  NaN => Not a Number
+		  Number.NaN 
+		  isNaN() => converts your arg into number and then perfoms a check
+		  isNaN() converts the value to a number before testing it
+		  isNaN() => returns true if value is Not a Number
+		  isNaN() => returns false if value is a Number 
+		  
+		  
+		  isNaN(0); // false
+		  isNaN('Hello'); // true
+		  isNaN('2005/12/12'); // false
+		  isNaN(' '); // false
+		  isNaN('$'); // true
 
       String Methods 
           length , charAt(),
@@ -1498,7 +1512,14 @@ Control Statements
 		  startsWith(prefix) => it returns true if prefix matches
 		  endsWith(suffix)  => it returns true if suffix matches
 		  search(value) => starting index of Value
-		    
+		  indexOf()
+		  lastIndexOf()
+		  substr(startIndex,length) => returns string starting from startIndex and length 
+		  slice(startIndex,endIndex) => returns string starting startIndex and less than endIndex
+		  substring(startIndex,endIndex) => returns string starting startIndex and less than endIndex
+		  trim() => removing blank spaces before and after the string
+		  split() => converting String into words
+		  concat()	  
 		  https://www.programiz.com/javascript/library/string
 		  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 		  
@@ -1544,7 +1565,121 @@ Control Statements
 		"Aqple"
 		"Apple".replaceAll('p','q');
 		"Aqqle"
-		  
+==================================================================================
+
+     student = [ 501,23,6.2,54,78.63,'A','Krish','Kumar',['Singing','dancing','cooking'],
+	            [9876543212,123456789],['English','Hindi']];
+				
+            student[8] 
+			
+	let objectName = { 
+	                   "key1":value,
+					   "key2":value,
+					    .....
+					   "keyn":value 
+					  }
+					  
+	let student = {
+	                "rollNumber":501,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Krish",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36,
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  }
+				  
+	JSON => Javascript Object Notation
+
+    let studentArray = [{
+	                "rollNumber":501,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Krish",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":511,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Ajay",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":515,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Vijay",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":518,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Lavanya",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  }]	
+				 
+	Task : Design an Employee Object 
+	       Arrays,Object,Array of Objects, Object inside Object 
 	   
 	   
 	   
