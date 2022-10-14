@@ -1,0 +1,16 @@
+Objects
+========================
+creating empty object
+let obj = {};
+or
+let obj = new Object();
+
+//add elements
+student["roll no"]=501;
+student["name"] = "Ajay";
+student["percentage"] = 78.33
+
+//access
+student["roll no"]
+student["name"]
+student["percentage"]

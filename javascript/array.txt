@@ -1,0 +1,16 @@
+Array
+======================
+creating empty array
+let arrayData = []
+or
+let arrayData = new Array();
+
+//add elements
+student[0] = 501
+student[1] = "Ajay"
+student[2]= 78.33
+
+//access
+student[0]
+student[1]
+student[2]

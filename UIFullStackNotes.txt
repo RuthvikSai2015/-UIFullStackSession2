@@ -1677,9 +1677,93 @@ Control Statements
 								  "pincode":560043
 					           }
 				  }]	
-				 
+			product={
+  "description": "(Renewed) DELL Latitude 5490 Core i5 8th Gen Laptop, 16 GB RAM, 256GB SSD, Intel HD Graphics, 14 inch (36.83 cms) HD Screen, Windows 11 (Upgraded), MS Office, Black, Slim",
+  "rating": 1,
+  "MRP": 59999.00,
+  "price": 29605,
+  "discount": "50%",
+  "offers": [
+    {
+      "bankOffer": "750InstantDiscont",            },            {               "noCostEMI":"ordersAbove3000"            },            {              "partnerOffers":"packWorth999"            }],      "specification":{                   "Brand":"Dell",                   "Series":"737-cr",                   "screen-size": "14inches",                   "colour":"black" }}
+	  
 	Task : Design an Employee Object 
 	       Arrays,Object,Array of Objects, Object inside Object 
+		   
+		   Employee : Eid
+		              name : {firstName:value , middleName, lastName }
+					  nominee: string 
+					  gender: string
+					  salary: number
+					  address: { hNo, roadNumber, street ,pincode}
+					  accountDetails : [{bankAccount1=> bankAddress = {}},{bankAccount2}] = [{{}},{}]
+					  hobbies:[]
+					  education : [{},{},{}]
+					  
+	    JavaScript Object Notation Preparation ways :
+		1. Single Object Preparation
+		2. Multiple Object Preparation
+		
+		let laptop = {
+		               "company":"dell",
+					   "cost": 45000,
+					   "color":black
+					  }
+					  
+		let laptops = [{
+		               "company":"dell",
+					   "cost": 45000,
+					   "color":black
+					  },
+					  {
+		               "company":"hp",
+					   "cost": 5000,
+					   "color":black
+					  }]
+					 
+	How to access Object Keys value
+	1. Using .(period) operator
+    2. Using [] Operator
+    3. Using ?. operator
+    4. Using For in Loop 	
+	
+	if the key value contains space or any other special character it is not treated as key in
+	.(period) notation.whereas in others it is treated as key only
+	2 and 3 are recommended
+	
+    4. syntax:
+	       for(const variable in object){
+		     //statement
+			}
+			
+    Q1. How to add a new pair to an existing object ?
+	Q2. Can we store duplicate Keys in Object ?
+	Q3. How to update an existing object value?
+	Q4. How to delete existing one pair in Object?
+	
+	2. If we add duplicate key the old value will be replaced by New Value(latest)
+	  company => lenovo
+	  
+	1. syntax : objectName["newKey"] = value;
+	
+	3. syntax : objectName["existingKey"] = newValue;
+	
+	4. syntax : delete objectName["existingKey"] => delete keyword 
+	
+	Methods in Objects
+	
+	1. Object.keys(objectName) => Return all keys in object
+	2. Object.values(objectName) => Return all values in object
+	3. Object.entries(objectName) => Return all keys and values 
+	
+=====================================================================================
+
+	
+	
+	  
+	  
+					  
+		
 	   
 	   
 	   
