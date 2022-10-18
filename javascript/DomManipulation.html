@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Document</title> 
 </head>
+
 <body>
    <h1 style="color:red" id="id1">Good Evening All</h1>
    <h2 style="color:green" id="id2">Welcome to HTML</h2>
-   <input type="text" value="HI" id="id3">
+   <!-- <input type="text" value="HI" id="id3"> -->
+   Number1 : <input type="number" value="100" id="id5"><br />
+   Number2 : <input type="number" value="200" id="id6"><br />
+   Result: <input type="number" id="result">
+   <input type="button" value="changeSomething" onclick="domManipulation()">
    <script>
-     document.getElementById("id1").innerHTML="Good Morning All";
-     document.getElementById("id2").innerHTML="Welcome to JS session";
+      function domManipulation() {
+         document.getElementById("id1").innerHTML = "Good Morning All";
+         document.getElementById("id2").innerHTML = "Welcome to JS session";
+         // document.getElementById("id3").value="Bye Students";
+         document.getElementById("result").value = parseInt(document.getElementById("id5").value) + parseInt(document.getElementById("id6").value);
+         document.getElementById('id1').style.backgroundColor = "pink";
+         document.getElementById('id1').style.color = "black";
+      }
    </script>
 </body>
+
 </html>
