@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Demo</title>
+</head>
+<body>
+    <label>Full Name is : </label><input type="text" id="t1" onblur="fun1()">
+    <span id="s1"></span>
+    <br><br>
+   <label>Email id:</label><input type="email" id="t2"  value="SAVITHA.RAMESH@GMAIL.COM" onblur="fun2()">
+<script>
+    // function fun1(){
+    //    let personName = document.getElementById("t1").value;
+    //    document.getElementById("t1").value = personName.toUpperCase();
+    // }
+    // function fun2(){
+    //     let personEmail = document.getElementById("t2").value;
+    //    document.getElementById("t2").value = personEmail.toLowerCase();
+    // }
+    function fun1(){
+       let personName = document.getElementById("t1").value;
+       if(personName == ''){
+         document.getElementById('s1').style.color="red";
+         document.getElementById('s1').innerHTML='* Please fill the name ';
+         document.getElementById('t1').focus();
+       }
+       else{
+        document.getElementById('s1').style.color="blue";
+        document.getElementById('s1').innerHTML='value has been entered ';
+       }
+    }
+</script>
+</body>
+</html>

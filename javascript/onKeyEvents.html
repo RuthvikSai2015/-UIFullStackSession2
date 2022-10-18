@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label>Full Name is : </label><input type="text" id="t1" onkeyup="fun1()">
+    <label>Full Name is : </label><input type="text" id="t1" onkeydown="fun1()"> -->
+    <label>Full Name is : </label><input type="text" id="t1" onkeypress="fun1()">
+    <br><br>
+    Your Name is : <span id="s1"></span>
+<script>
+    function fun1(){
+        document.getElementById("s1").innerHTML = document.getElementById("t1").value;
+    }
+</script>
+</body>
+</html>

@@ -1758,6 +1758,41 @@ Control Statements
 	
 =====================================================================================
 
+    if even the type is number browser returns string on 
+	document.getElementById()
+	
+	Input and Output Functions in javascript
+	
+	Output Functions:
+	1. alert()
+	2. confirm()
+	3. document.write
+	4. console.log()
+	
+	Input Function
+	1. prompt()
+	==========================================================
+	
+	Ashok IT Channel => Playlist => how to use git 
+	==========================================================
+	
+	Javascript Events 
+	
+	Def: event is an action performed on dom elements
+	
+	button was clicked => onclick
+	button was clicked twice => ondblclick
+    pressing keys => onkeypress
+    .......
+
+    1.mouse related events
+       onclick,ondblclick,onmouseenter,onmouseleave
+	2. key related events
+	   onkeyup, onkeydown , onkeypress 
+	3. focus related events
+	   onblur, onfocus
+	   
+
 	
 	
 	  
