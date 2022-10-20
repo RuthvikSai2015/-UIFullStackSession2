@@ -1791,6 +1791,10 @@ Control Statements
 	   onkeyup, onkeydown , onkeypress 
 	3. focus related events
 	   onblur, onfocus
+	4. form related events
+	   onsubmit,onreset
+	5. other events
+	   onload,onunload,onselect,oncopy,onchange,.....
 	   
 
 	

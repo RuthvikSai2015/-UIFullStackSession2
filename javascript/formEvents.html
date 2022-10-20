@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:5px;
+            padding:5px;
+        }
+    </style>
+    <script>
+        function onSubmitFunction(){
+            let personName = document.getElementById("inputName").value;
+            if(personName == ''){
+               alert("Please enter the name");
+               return false;
+            }else{
+               alert("Hi Welcome "+personName);
+               return true;
+            }
+        }
+        function resetFunction(){
+            // if(confirm("Are you sure to delete the content from form")){
+            //     return true;
+            // }else{
+            //    return false;
+            // }
+            return confirm("Are you sure to delete the content from form");
+        }
+    </script>
+</head>
+
+<body>
+    <form name="nameForm" id="nameForm" action="www.ashokit.com" onsubmit="return onSubmitFunction()" onreset="return resetFunction()">
+        <label>Name:</label>
+        <input type="text" id="inputName" name="inputFullName">
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

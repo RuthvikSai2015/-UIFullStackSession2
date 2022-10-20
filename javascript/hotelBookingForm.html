@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Booking Form</title>
+    <script>
+        function submitFunction() {
+            let totalFare = 0;
+            const PER_DAY = 1000;
+            const TV = 50;
+            const LAPTOP = 250;
+            const WIFI = 100;
+            const AC = 500;
+            const NON_AC = 0;
+            const ONE_BED_ROOM = 100;
+            const TWO_BED_ROOM = 500;
+            const THREE_BED_ROOM = 1000;
+            let customerName = document.getElementById("customerName").value;
+            let checkInDate = document.getElementById("checkInDate").value;
+            let cb1 = document.getElementById("c1").checked;
+            let cb2 = document.getElementById("c2").checked;
+            let cb3 = document.getElementById("c3").checked;
+            let rb1 = document.getElementById("rb1").checked;
+            let rb2 = document.getElementById("rb2").checked;
+            let select = document.getElementById("select").selectedIndex;
+            let noOfDays = parseInt(document.getElementById("noOfDays").value);
+            if (!(cb1 || cb2 || cb3)) {
+                alert("Please select one facility1");
+                return false;
+            }
+            if (!(rb1 || rb2)) {
+                alert("Please select one facility2");
+                return false;
+            }
+            if(select == 0){
+                alert("Please select one facilty3");
+                return false;
+            }
+            if (customerName == "") {
+                alert("Please enter customer Name");
+                return false;
+            }
+            if (checkInDate == "") {
+                alert("Please select the Check In Date");
+                return false;
+            }
+            else {
+                if (cb1) {
+                    totalFare += TV;
+                }
+                if (cb2) {
+                    totalFare += LAPTOP;
+                }
+                if (cb3) {
+                    totalFare += WIFI;
+                }
+                if (rb1) {
+                    totalFare += AC;
+                }
+                if (rb2) {
+                    totalFare += NON_AC;
+                }
+                if( select == 1){
+                    totaFare += ONE_BED_ROOM;
+                }
+                if(select == 2){
+                    totalFare += TWO_BED_ROOM
+                }
+                if(select == 3){
+                    totalFare += THREE_BED_ROOM;
+                }
+                totalFare = (totalFare + PER_DAY) * noOfDays;
+                alert("Total Fare is " + totalFare);
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="bookingForm" id="bookingForm" action="www.facebook.com" onsubmit="return submitFunction()">
+        <table border="2px">
+            <caption>Welcome to ABC Hotel</caption>
+            <tr>
+                <td>Customer Name:</td>
+                <td><input type="text" id="customerName" name="customerName"></td>
+            </tr>
+            <tr>
+                <td>Date of CheckIn:</td>
+                <td><input type="date" id="checkInDate" name="checkInDate"></td>
+            </tr>
+            <tr>
+                <td>Number of Days:</td>
+                <td><input type="number" id="noOfDays" name="noOfDays"></td>
+            </tr>
+            <tr>
+                <td>Facility1:</td>
+                <td><input type="checkbox" id="c1" name="c1" value="TV">TV(50)
+                    <input type="checkbox" id="c2" name="c1" value="Laptop">Laptop(250)
+                    <input type="checkbox" id="c3" name="c1" value="Wifi">Wifi(100)
+                </td>
+            </tr>
+            <tr>
+                <td>Facility2:</td>
+                <td><input type="radio" id="rb1" name="rb1" value="AC">AC
+                    <input type="radio" id="rb2" name="rb2" value="Non-AC">Non-AC
+                </td>
+            </tr>
+            <tr>
+                <td>Facility3:</td>
+                <td><select id="select" name="select">
+                     <option value="Select Room Type">Select Room Type</option>
+                     <option value="1 Bed Room">1 Bed Room</option> 
+                     <option value="2 Bed Room">2 Bed Room</option> 
+                     <option value="3 Bed Room">3 Bed Room</option> 
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>Submit:</td>
+                <td><input type="submit" id="submitButtom"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

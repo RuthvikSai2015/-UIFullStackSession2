@@ -7,10 +7,10 @@
     <title>Focus Demo</title>
 </head>
 <body>
-    <label>Full Name is : </label><input type="text" id="t1" onblur="fun1()">
+    <label>Full Name is : </label><input type="text" id="t1" onblur="fun1()" >
     <span id="s1"></span>
     <br><br>
-   <label>Email id:</label><input type="email" id="t2"  value="SAVITHA.RAMESH@GMAIL.COM" onblur="fun2()">
+   <label>Email id:</label><input type="email" id="t2"  value="SAVITHA.RAMESH@GMAIL.COM" onblur="fun2()" onfocus="changeBackground(this)">
 <script>
     // function fun1(){
     //    let personName = document.getElementById("t1").value;
@@ -31,6 +31,10 @@
         document.getElementById('s1').style.color="blue";
         document.getElementById('s1').innerHTML='value has been entered ';
        }
+    }
+    function changeBackground(elem){
+        elem.style.backgroundColor='yellow';
+        elem.style.color="red";
     }
 </script>
 </body>
