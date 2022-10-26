@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <script src="ecommerce.js"></script>
+</head>
+
+<body onload="loadDummyItems()">
+    <label>Item Name:</label>
+    <input type="text" id="itemName" name="itemName">
+    <label>Item Cost:</label>
+    <input type="number" id="itemCost" name="itemCost">
+    <label>Quantity:</label>
+    <input type="number" id="itemQuantity" name="itemQuantity">
+    <button onclick="addItem()">Add to Bag</button><br>
+    <div>
+        <button id="showTotal" onclick="showTotal()">Show Total Cost</button>
+        <span id="totalCost"></span>
+    </div><br>
+    <div>
+        <button id="showTotal" onclick="showTotal()">Show Total Cost</button>
+        <span id="totalCost"></span>
+    </div><br>
+    <div>
+        <button id="" onclick="greater30Items()">Show Items greater than 30 </button>
+         <ul id="greater30"></ul>
+    </div>
+    <table id="resultTable" border="2px" cellpadding="5px" cellspacing="5px" align="center">
+   
+    </table>
+</body>
+
+</html>
