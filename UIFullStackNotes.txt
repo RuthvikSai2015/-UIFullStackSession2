@@ -1796,6 +1796,15 @@ Control Statements
 	5. other events
 	   onload,onunload,onselect,oncopy,onchange,.....
 	   
+	   http://127.0.0.1:5500/www.facebook.com?customerName=&checkInDate=&noOfDays=2&c1=TV&c1=Laptop&rb1=AC&select=2+Bed+Room
+	   
+	 Javascript Arrays and Objects
+	 ====================================
+	 Display
+	 Add
+	 Delete
+	 
+	 Task : Updation
 
 	
 	
