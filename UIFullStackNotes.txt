@@ -1805,7 +1805,36 @@ Control Statements
 	 Delete
 	 
 	 Task : Updation
+	 
+	 Objects change forEach to map
+	 
+============================================================================
 
+    Exception Handling
+	
+	Compile time errors => Generated due to improper syntax
+	     Ex: le x=100; //compile time error
+		 
+    Run time errors => Generated due to improper logic
+	            Ex: console.log(y);  //Error
+				
+	Logical Errors
+	            Ex: let ar = [1,3];
+				    console.log(ar[5]);
+					
+    TRY => This keyword used to prepare block of code which monitors the errors/exceptions
+	       1. If Exception occurs control goes to catch block
+           2. If the Exception doesnt occur then control goes to finally block
+		   
+    CATCH => This Keyword used to prepare block of code which handles the exceptions
+	         that are raised by try block
+			 1. After Catch the control goes to finally block
+	FINALLY => This Keyword is used to prepare block of code which will execute in 2 cases
+	          1. If there is no exception in Try block
+			  2. If there is exception then try,catch and finaly block
+			  
+	THROW => This keyword used to throw the exception information to catch block 
+	
 	
 	
 	  
