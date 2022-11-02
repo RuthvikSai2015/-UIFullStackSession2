@@ -1833,7 +1833,84 @@ Control Statements
 	          1. If there is no exception in Try block
 			  2. If there is exception then try,catch and finaly block
 			  
-	THROW => This keyword used to throw the exception information to catch block 
+	THROW => This keyword used to throw the exception information to catch block
+
+=======================================================================================
+
+    this keyword 	
+	
+	using this keyword we can access current object members
+	
+	 var text = "savi1t34ha"; 
+	 var withNoDigits = text.replace(/[0-9]/g, '');
+	 
+	 https://www.freecodecamp.org/news/how-to-use-javascript-collections-map-and-set/
+	 
+	 https://kangax.github.io/compat-table/es6/
+	 
+	 -- (function(){setTimeout(()=>console.log(1),2000);  console.log(2); 
+	        setTimeout(()=>console.log(3),0); console.log(4);}) ();
+			
+	https://www.bing.com/search?q=diff+btw+ES5+and+ES6&cvid=0557a2c1349e433eba1d79f9077408e4&aqs=edge..69i57.6540j0j1&FORM=ANAB01&PC=U531
+	
+	demo.ts => Compilers/Transpilers => demo.js 
+	
+	=> npm install --global typescript
+	
+	https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DYUwLgBADiBODOB7AdgQQOYgFzIK4FsAjOCAXggCYBWAbgChRIYEUA5AQ323jFgEtk6MhADkAZXYA3PmAAW7EfUYQ-8ALLsAVolhZCiRKHbJhvXCCA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Cstage-2%2Ctypescript&prettier=false&targets=&version=7.20.1&externalPlugins=&assumptions=%7B%7D
+
+    Typescript 
+	
+	=========================================================
+	Data declaration with types
+	
+	   Javascript                         Typescript
+	   
+	syntax: let variableName              let variableName:datatype = value;
+	
+	I. Primitives(nbs)
+	
+	        let personAge = 21            let personAge:number = 21;
+			let personName = 'Krish'      let personName:string = 'Krish';
+			let isMajor = true            let isMajor:boolean = true;
+			
+    II.Non Primitive (ao)
+	       let familyAges = [21,33,44]    let familyAges:number[] = [21,33,44]
+		   let person = {                 let person:object = {
+		             
+		        personAge:21,                    personAge:21,
+				personName:"Krish",              personName:"Krish",
+				isMajor:true                     isMajor:true
+		   }
+	
+	    let x:number = 10; //valid
+		let y:number = 'Apple' // not valid
+		let fruitName: any = 'Apple';
+		
+	    let familyAges = [21,33,44]    let familyAges:any[] = [21,33,44,"savitha"]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 
+	
+	
 	
 	
 	
