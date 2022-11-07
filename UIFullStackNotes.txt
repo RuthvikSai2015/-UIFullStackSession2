@@ -1885,12 +1885,112 @@ Control Statements
 	
 	    let x:number = 10; //valid
 		let y:number = 'Apple' // not valid
-		let fruitName: any = 'Apple';
+		
+	III.Generic Data type as Primitive: any => It allows any type of data 
+	    syntax:
+		    let variableName : any = value;
+		    let fruitName: any = 'Apple';
+			
+	    Generic Data Type as Non Primitive 
+		
+		    let x: any[] = [100,200,300];
 		
 	    let familyAges = [21,33,44]    let familyAges:any[] = [21,33,44,"savitha"]
 	
+	    =>tsc demo1.ts
+		=>node demo1.js
+	    => ts-node demo1.ts
+		
+	2. Function Declaration with Return Types
 	
+	  JS                                        TS
+	called function
+	function functionName(parameter list){      function FunctionName(param1:datatype
+	  //body                                       param2:datatype):returnType{
+	  return value ;                                //body
+	}                                               return value ; 
+	calling function                               }
+	functionName(arg list) 
 	
+	return type has only 2 options
+	1) void and (number boolean string array object)
+
+    PS: Print Hello using TS Function (without parameters and without return value)
+        function showMsg():void {
+          console.log("Hello");
+        }
+        showMsg();		
+		
+    PS: Prepare a Function it takes argument as an array and returns sum of first and last element
+	
+	Ex1: [1,2,3] => 4
+	Ex2: [10,20,30,40,50] => 60
+	
+	PS: take array as as argument then you have to swap the elements
+	    [1,2,3] = [3,2,1]
+		
+====================================================================================
+
+   Object Oriented Features in Javascript
+   
+   1. how to declare data?
+   2. how to declare functions?
+   
+      Blue Print / Plan 
+	  Blue Print => House => 100s of Houses
+	                Class    Objects 
+					
+	Blue Print => Color                      house1 object = blue color 
+	              Interior 
+				  function addColor(){
+				  }
+				  
+	Hs1 =< BLue, Hs2 => Orange  ,Hs3 ,Hs4 
+   
+     Class       Imaginary thing in world/ Blue print 
+	 Object      Physcical Existence /It is a instance of a class
+	 
+	 Flower as a blue print 
+	 lily,jasmine , rose
+	 
+	 syntax : 
+	 class ClassName {
+	     //data 
+		 //functions/methods
+	 }
+	 let objectName = new ClassName();
+	 
+	 class Flower{
+	 }
+	 let rose = new Flower()
+	 
+	 Encapsulation
+	     Wrapping of data and functions/methods together is known as encapsulation
+		
+	  class ClassName {
+	     //data 
+		 AccessModifier dataName:dataType;
+		 private n1:number ;
+		 public n2:number;
+		 //function
+		 private doSum():void{
+		     this.n1;
+		 }
+		 public doSum1():void{
+		     doSum();
+		 }
+	 }
+	 n2 = 10 ;
+	 Access Modifer: using following access modifer we can provide scope to our class members
+	 
+	 1.Private : These members can be visible to current class members only 
+	 2.Public:   These members can be visible to outside any class 
+	 3.Protected : These members can be visible from parent to child class
+		 
+	 
+	 
+	 
+	 
 	
 	
 	
