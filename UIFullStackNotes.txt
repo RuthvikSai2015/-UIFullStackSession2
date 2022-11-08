@@ -1970,14 +1970,15 @@ Control Statements
 	  class ClassName {
 	     //data 
 		 AccessModifier dataName:dataType;
-		 private n1:number ;
-		 public n2:number;
+		 AccessModifier dataName1:dataType;
 		 //function
-		 private doSum():void{
-		     this.n1;
+		 AccessModifer functionName1(param1:datatype,.......paramn:datatype):returntype{
+		    //body
+			return value ;
 		 }
-		 public doSum1():void{
-		     doSum();
+		 AccessModifer functionName2(param1:datatype,.......paramn:datatype):returntype{
+		    //body
+			return value ;
 		 }
 	 }
 	 n2 = 10 ;
@@ -1986,6 +1987,20 @@ Control Statements
 	 1.Private : These members can be visible to current class members only 
 	 2.Public:   These members can be visible to outside any class 
 	 3.Protected : These members can be visible from parent to child class
+	 
+	 Javascript interview : Question 7 
+	 
+	     Employee {
+		 //Data + Constructor
+		 //Methods
+		 public constructor(public empname:string,public empage:number,public maritalStatus:boolean,
+             public height:number){
+		
+		   }
+		 public showEmployeeInfo(){
+		 
+		 }
+		 }
 		 
 	 
 	 
