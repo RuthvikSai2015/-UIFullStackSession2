@@ -2002,6 +2002,17 @@ Control Statements
 		 }
 		 }
 		 
+		 Task : take phoneNumber as array and print it 
+		 
+		 https://jsonplaceholder.typicode.com/
+		 
+		 https://www.postman.com/downloads/
+		 
+		 https://reqres.in/
+		 
+		 Task: Consume data from any fake rest apis
+		 
+		 when the data member is part of constructor access modifier is mandatory 
 	 
 	 
 	 
