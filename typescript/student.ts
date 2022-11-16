@@ -10,3 +10,4 @@ class Student{
 let student1 = new Student("Krishna Kumar");
 student1.showName();
 console.log(student1.fullName);
+

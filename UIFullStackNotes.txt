@@ -2013,6 +2013,12 @@ Control Statements
 		 Task: Consume data from any fake rest apis
 		 
 		 when the data member is part of constructor access modifier is mandatory 
+		 
+	Inheritance
+		 
+		  extending features from one class to another class
+			  
+			  
 	 
 	 
 	 
