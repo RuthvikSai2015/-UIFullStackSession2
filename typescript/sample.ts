@@ -26,4 +26,4 @@ class Calculator{
         return this.num1-this.num2;
     }
 }
-export {personName,personAge,Calculator};
+export {personName,personAge,Calculator,GoodBye};
