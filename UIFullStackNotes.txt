@@ -2017,7 +2017,67 @@ Control Statements
 	Inheritance
 		 
 		  extending features from one class to another class
+		  
+    Adv:
+	    Code Reusability
+		
+	Representation 
+	     class C1{}
+		 
+		 class C2 extends C1{}
+		 
+	this keyword 	
+	      this keyword used to access "current class object members(data/methods/constructor)"
 			  
+    super keyword 
+	      used to access "parent class object members(data/constructor/methods" from child class
+		  
+ OOPS :
+       Encapsulation 
+	     -- class preparation
+		 -- access modifiers(public,private,protected)
+		 -- declare data
+		     -- instance variable
+			 -- static variable 
+		 -- constructor function 
+		 -- declare methods
+		    -- instance methods
+			--static methods
+		--Usage of one class by another class
+		-- Object Creation
+	  Inheritance :
+	    -- extends keyword
+		--types of inheritance
+		-- super and this keyword
+		
+		
+	  Modules in Typescript
+	    --import and export
+		
+	  Interface
+	  Abstract 
+	  
+	  =============================================================
+	  
+	 2 types of methods
+	 
+	 1. Methods depend on objects
+	 2. Methods which do not depend on objects
+	 
+	 typescript will not support 2 types of inheritance 
+	 1. multiple inheritance
+	 2. Multipath Inheritance
+	 
+	 Interfaces
+	 
+	 interfaces can have only method declaration not method definition
+	 no initialization in interface is allowed whereas implemented class
+	 initialization is mandatory
+	  
+	
+	  
+		  
+	
 			  
 	 
 	 
