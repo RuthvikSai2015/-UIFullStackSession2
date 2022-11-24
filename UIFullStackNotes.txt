@@ -1848,8 +1848,12 @@ Control Statements
 	 
 	 https://kangax.github.io/compat-table/es6/
 	 
-	 -- (function(){setTimeout(()=>console.log(1),2000);  console.log(2); 
-	        setTimeout(()=>console.log(3),0); console.log(4);}) ();
+ ( function(){
+    setTimeout(()=>console.log(1),2000);  
+    console.log(2); 
+    setTimeout(()=>console.log(3),0); 
+    console.log(4);
+ }) ();
 			
 	https://www.bing.com/search?q=diff+btw+ES5+and+ES6&cvid=0557a2c1349e433eba1d79f9077408e4&aqs=edge..69i57.6540j0j1&FORM=ANAB01&PC=U531
 	
@@ -2039,6 +2043,8 @@ Control Statements
 		 -- declare data
 		     -- instance variable
 			 -- static variable 
+			 -- Setters(Mutators)
+			 -- Getters(accessors)
 		 -- constructor function 
 		 -- declare methods
 		    -- instance methods
@@ -2073,8 +2079,63 @@ Control Statements
 	 interfaces can have only method declaration not method definition
 	 no initialization in interface is allowed whereas implemented class
 	 initialization is mandatory
-	  
+	 
+	 Abstract Class 
+	   We need one combination of allow method definition and allow method declaration
+	   
+	   interface Vehicle{
+	      start():void;
+		  stop():void;
+		  mileage():void;
+	   }
+	   class Bike implements Vehicle{  
+	       start():void{}
+		   stop():void{}
+		   mileage():void {}
+		   contructor(public x:number{
+		   }
+	   }
+	   
+	 constructor(rollNumber:number,name:string){
+        this.rollNumber=rollNumber;
+        this.name=name;
+     }
+     public set dataVariable(dataVariable:dataType){
+	 }
+	 public get dataVariable(){
+	 }
+	 
+	 Initialisation in case of primitive data types is manadatory
+	 any data type it doesnt matter 
+	 
+	 Experimental Decorators Setting 
+	 -> tsc stage.ts --experimentalDecorators
+	 
+	 -> node stage.js
 	
+	  object has to have key value pair 
+	  enum doesnt neccesarily need a key (automatically)
+	  
+==================================================================================
+	  
+	  Synchronous and Asynchronous Communication 
+	  
+	  Synchronous is executing line by line single threaded
+	  Javascript is Synchronous 
+	  
+	  Asynchronous Programming means multi threaded
+      callbacks,ajax,fetch,promises	 
+
+       Timer Functions in javascript 	
+
+       setInterval is Continuous (intervalTime)
+       setTimeout is not Continuous (delayTime)
+	   
+
+	   
+	   
+	  
+	  
 	  
 		  
 	
