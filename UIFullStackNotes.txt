@@ -2131,8 +2131,51 @@ Control Statements
        setInterval is Continuous (intervalTime)
        setTimeout is not Continuous (delayTime)
 	   
-
+	   Three Images loaded on web page
 	   
+	   1 image is 120kb -- 3 secs
+	   2 image is 145kb -- 4 secs`
+	   3 image is 2mb   -- 6 secs
+	                       13 seconds
+						   
+		3 image is 2 mb 
+		1 and 2 according to 3 => 6 seconds
+	   
+
+	    Image1  => Image2 => Image3 ======== Synchronous
+		
+		Image1  =>  Asynchronous 
+		Image2  =>
+		Image3  =>
+		
+	Zomato Application Order Flow :
+	
+	   Order Placed                          -- after 2 seconds 
+	   Order is confirmed by restaurant      -- .5 seconds(1/2 seconds)
+	   Food is preparing
+	   Order is ready
+	   Order has been packed 
+	   Delivery boy has picked up your order 
+	   Delivery boy on the way 
+	   Delivery boy has reached your home
+	   Order is delivered
+	   feedback
+	   
+	   prerequisite
+	   1) setTimeout 
+	   2) function expression and arrow function 
+	   
+	    let add = function(a,b){
+		    return a+b;
+		}
+		let add = (a,b) =>{
+		  return a+b;
+		}
+		
+		
+	   
+		
+		
 	   
 	  
 	  
