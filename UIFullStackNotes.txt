@@ -2200,18 +2200,153 @@ Control Statements
 				 .then(doSomething3)
 				 .catch((error) => {})
 				 .finally ()
-		     
-		
-		
 		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 		
+		async and await 
+		async : makes a function return Promise 
+		        async function functionName():void{
+				}
+		
+		await makes a function wait for a promise 
+		
+		    async function createOtp(){
+			  //some logic here
+			  create otp               5
+			}
+			async function sendOtp(){
+			   await createOtp();      3
+			   send otp to phoneNumber 4
+			} 
+			1 await sendOtp(); //once createOtp is resolved then sendOtp is called
+			
+			=============================================================
+			
+			async function createOtp(){
+			  //some logic here
+			  create otp               5
+			}
+			async function sendOtp(){
+			   send otp to phoneNumber 4
+			}
+			await createOtp();//once createOtp is resolved then sendOtp is called
+			await sendOtp();
+			
+			https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+			
+			callbacks                   promises                     async / await
+		
+		  asynchronous                asynchronus                     asynchronous
 	   
+	      print(string,callback)      new Promise{                    async 
+			                           resolve                        await 
+									   reject }
+	      callbacks hell              nest the promises               then 
+
+                                      .then()                         async  -- asynchronous
+                                      .then()                         await 
+                       									  
+	                                  promises can handle one event    can handle multiple events
+						
+==================================================================================================
+
+        Node JS => run time javascript library 
+		built on V8 Engine 
+		
+		2009 by Ryan Dahi v0.10.36
+		
+		https://nodejs.org/en/download/ -- installation 
+		
+		Features of Nodejs
+		
+		Asynchronous and Event Driven : 
+		
+		Very Fast : API Communication 
+		
+		No Buffering : output the data in chunks (portion by portion 100)
+		
+		Single Threaded but Highly scalable : 
+		
+		---------------------------------------------------------------
+		
+		Where to use Node js
+		
+		Data Streaming Applications
+		JSON Based Applications
+		Input/Output based Applications 
+		
+		login request = {"username":username,"password":password}
+		register request = {"username":username,"password":password,"address":{"hno":hno,"place":place},"phone":[phone1:phone1,phone2:phone2]}
+		
+		three components 
+		1) Import required modules => require => load nodejs modules 
+		2) Create Server 
+		3) Read Request and Return Response 
+		
+		1) var http = require("http")
+		2) http.createServer() 8081 listen method 
+		
+		  http.createServer( function(req,res){
+		    //send the HTTP header
+			//HTTP Status 200 : ok 
+			// content type : text/plain
+			
+			res.writeHead(200, { 'Content-Type' : 'text/plain'})
+			res.end('Hello World\n');
+		 }).listen(8081);
+		
+		https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses
+
+         REPL Terminal 
+		 Read , Eval , Print , Loop 
+		 
+		 Package Manager (NPM) 
+		  
+		 Modules into my Node js Application 
+		 
+		 npm install <Module Name>
+		 
+		 npm install express 
+		 
+		 var express = require('express');
+		 
+		 npm -> node package manager -> is used to manage the application
+		 npx -> node package execute  -> 
+	
+		
+		https://www.npmjs.com/package/express
+		
+		MEAN MERN 
+		
+		Express js 
+		
+		http://localhost:8081/login => req => {username,password} res => {success/failure}
+		
+		Express js is a Node js web application server framework 
+		designed for building single page,multi page and hybrid web applications 
+		
+		npm install express 
+		
+		create node express application
+		
+		npx express-generator app-name
 		
 		
-	   
-	  
-	  
-	  
+		GET    => Request for one or more data 
+              cannot pass data in body
+
+		POST  => Insert a record into database
+					   pass data in body
+
+		PUT  => Update a record into database 
+					  
+		DELETE => delete a record from the database
+
+		https://nodejs.dev/en/api/v19/documentation/
+
+		
+		
+		
+		
 		  
 	
 			  

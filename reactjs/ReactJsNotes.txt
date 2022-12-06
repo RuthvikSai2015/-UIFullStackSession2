@@ -1,0 +1,37 @@
+React JS
+
+   React js is a javascript library used for builiding user interfaces(single page applications)
+  
+   https://reactjs.org/
+   
+   what are the advantages of React JS?
+
+   -> Easy to write code and light weight 
+   -> Reusable Component based
+      Ex: Ecommerce application : end user , Agents, Students 
+          Login Component 
+          generic componnet login can be re-used for all type of users -- reusable 
+   -> Design simple views for your application 
+   -> Not too hard to learn 
+   -> React makes it painless to creat interactive UI's 
+   
+    AJAX -> Asynchronous Javascript(callbacks) and XML
+	
+	AJAX is not a programming language its a programming concept 
+	
+	-> using callbacks,promises , async/await we can achieve asynchronous way of programming
+	-> Application Programming Interface 
+	
+	-> Reads data from a web server after the page has been loaded
+	-> Updates the page(part of element) without reloading the page
+	-> sends the data to web server in background
+	
+	Approach 1: XMLHttpRequest Object to make Ajax Call . XMLHttpRequest ()
+	
+	Approach 2: We will use jQuery to make an Ajax callbacks
+	
+	Aproach 3: fetch() API which is used to make flexible structure 
+	
+
+  		  
+   
