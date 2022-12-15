@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div id="demo">
         <button onclick="ajaxCall()">Check Ajax Call</button>
+        <table border="1px">
+
+            <tbody id="dataTable">
+
+            </tbody>
+        </table>
     </div>
     <script>
-        function ajaxCall(){
+        function ajaxCall() {
             // $.ajax({
             //     //Sample url to make request
             //     url : `http://jsonplaceholder.typicode.com/users`,
@@ -28,11 +37,20 @@
             //     }
             // })
 
-            let url = 'http://jsonplaceholder.typicode.com/users'
-            fetch(url , { method : 'GET' }).then(response => response.json()).then(string =>{
-                    alert(JSON.stringify(string));
-            }).catch( errorMsg => console.log("error"));
+            let url = 'http://localhost:3000'
+            fetch(url, { method: 'GET' }).then(response => response.json()).then(string => {
+                let tableData;
+                for (let i = 0; i < string.length; i++) {
+                    tableData += "<tr><td>" + string[i].id + "</td>" +
+                        "<td>" + string[i].name + "<td>";
+                    if (string[i].address) {
+                        tableData += "<td>" + string[i].address.street + " " + string[i].address.suite + "</td></tr>";
+                    }
+                }
+                document.getElementById("dataTable").innerHTML = tableData;
+            }).catch(errorMsg => console.log("error"));
         }
     </script>
 </body>
+
 </html>
