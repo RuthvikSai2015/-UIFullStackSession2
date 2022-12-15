@@ -32,6 +32,8 @@ React JS
 	
 	Aproach 3: fetch() API which is used to make flexible structure 
 	
+	https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX
+	
 
   		  
    
