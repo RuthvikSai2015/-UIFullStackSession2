@@ -34,6 +34,23 @@ React JS
 	
 	https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX
 	
+	===============================================================================
+	
+	Libraries provide predefined functions and classes to make work easier
+	
+	Framework is a foundation upon which developers can build application
+
+    Create React Application
+
+    2 ways -> 1) using cdn
+              2) using npx 	
+			  
+	Visual Studio Code
+	Live Server
+	Script Enable (VS Code ES7 React/Redux/React-Native/JS snippets)
+	
+	
+	
 
   		  
    

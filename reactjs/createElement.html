@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button id="button1" onclick="addElement()">Show Content</button>
+    <div id="div1">Static Content</div>
+
+    <script>
+        function addElement(){
+           //create a new div element
+           const newDiv = document.createElement("div");
+           //created a content
+           const newContent = document.createTextNode("Details here");
+
+           // add the text node to the newly created div
+             newDiv.appendChild(newContent);
+
+             //add the newly created element and its content to DOM
+            const currentDiv = document.getElementById("div1");
+            
+            document.body.insertBefore(newDiv,currentDiv);
+         }
+         
+        function showContent(){
+            document.getElementById("showDiv").innerHTML = "Details here";
+        }
+    </script>
+</body>
+</html>
