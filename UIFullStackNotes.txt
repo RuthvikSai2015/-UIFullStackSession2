@@ -2309,6 +2309,12 @@ Control Statements
 		 
 		 var express = require('express');
 		 
+		 npm install lodash
+		 
+		   "lodash": "^4.17.21",
+		   
+		   "lodash": "^3.17.21", 
+		 
 		 npm -> node package manager -> is used to manage the application
 		 npx -> node package execute  -> 
 	
@@ -2342,6 +2348,50 @@ Control Statements
 		DELETE => delete a record from the database
 
 		https://nodejs.dev/en/api/v19/documentation/
+		
+		Callbacks => asynchronous way of programming
+		
+		
+		input.txt => Welcome back to Node Js
+		
+		
+		==========================================================
+		Blocking Code
+		
+		var fs = require("fs");
+		var data = fs.readFileSync("input.txt");
+		
+		console.log(data.toString());
+		console.log("Program Ended");
+		
+		===========================================================
+		
+		Non - Blocking Code
+		
+		var fs = require("fs");
+		var data = fs.readFile("input.json",function(err,data){
+			if(err) return console.log(err);
+			console.log(data.toString());
+		})
+		console.log("Program Ended");
+		
+		============================================================
+		
+		Event Driven Programming 
+		
+		var buffer = new Buffer(10) => 10 octet streams of data(uninitialised)
+		
+		var buffer = new Buffer([10,20,30,40,50]); 
+		
+		var buffer = new Buffer("string1"); ["string","string1"]
+		
+		Streams => Streams are objects that let you read data from a source and write data to source
+		
+		Readable  -- used for read operation 
+		Writable  -- used for write operation
+		Duplex    -- used for both read and write operation
+		Transform -- type of duplex stream where output is based on input 
+		
 		
 
 		

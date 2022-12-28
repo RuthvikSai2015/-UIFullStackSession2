@@ -49,8 +49,45 @@ React JS
 	Live Server
 	Script Enable (VS Code ES7 React/Redux/React-Native/JS snippets)
 	
+	<html>
+		<head>
+		</head>
+		<body>
+		    <h1>  Welcome <h1>
+		</body>
+		</html>
+		
 	
+	JSX => Javascript XML 
 	
+	JSX allows us to write HTML in React
+	
+	<h1> Welcome to JSX </h1> ;
+	
+	props => <button type="button" disabled=true color="black"></button>
+	
+	https://react-md.dev/migration-guides/v4-to-v5
+	
+	 React  
+	 React DOM 
+	 ReactDOM.render()
+	 Javascript -> Create Element
+	 CDN Html => first way
+	 JSX 
+	 const a = <h1>Welcome </h1>;
+	 
+	 Component => Header (should start with capital letter)
+	 
+	 pass props(dept) to function Header => should not attempt to change the props 
+                         Pure Functions 	
+     
+	 npx create-react-app sampleapp
+     						 
+	 Install Bootstrap 
+	
+	  Bootstrap => CDN 
+	 
+	  React Bootstrap => as a task 
 
   		  
    
