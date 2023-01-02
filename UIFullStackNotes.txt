@@ -2392,6 +2392,17 @@ Control Statements
 		Duplex    -- used for both read and write operation
 		Transform -- type of duplex stream where output is based on input 
 		
+		Piping the Streams 
+		
+		piping is a mechanism where we provide the output of one stream as the input to other stream
+		
+		File System 
+		
+		https://github.com/RuthvikSai2015/ReactJsSession2
+		
+		Global Objects 
+		
+		available in all modules 
 		
 
 		
