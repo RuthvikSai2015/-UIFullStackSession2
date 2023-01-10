@@ -2334,7 +2334,7 @@ Control Statements
 		
 		create node express application
 		
-		npx express-generator app-name
+		npx express-generator app-name /  create a node application and then install express / cdn
 		
 		
 		GET    => Request for one or more data 
@@ -2403,6 +2403,42 @@ Control Statements
 		Global Objects 
 		
 		available in all modules 
+		
+		Express is a Node js web application framework 
+		
+		=> Handle HTTP requests
+		
+		=> dynamically render HTML Pages based on passing arguments
+		
+		=> Routing 
+		
+		=> localhost:3000/api/createUser 
+		   /updateUser 
+		   /retrieveDetails 
+		   /deleteDetails
+		   
+		body-parser => handle JSON,Text,XML, encoded data
+		
+		cookie-parser => parse request header and populate req.cookies 
+		
+		multer => handle form-data/multipart
+		
+		npm install body-parser
+		
+		npm install cookie-parser
+		
+		npm install multer 
+		
+		res.end() is used to send text to browser
+		
+		ejs => express javascript files 
+		
+		html => ejs 
+		
+		npm install ejs
+		
+		https://ejs.co/
+		
 		
 
 		
