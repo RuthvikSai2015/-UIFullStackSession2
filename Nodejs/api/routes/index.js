@@ -25,7 +25,7 @@ router.get("/register",(req,res) => {
 })
 
 router.post("/regsuccess",(req,res) =>{
-  console.log("request----",req.body.personEmail);
+  console.log("request----",req.body);
   let personEmail = req.body.personEmail;
   res.render("registersuccess",{personEmail:personEmail})
 })

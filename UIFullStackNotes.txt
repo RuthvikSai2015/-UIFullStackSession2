@@ -2439,15 +2439,168 @@ Control Statements
 		
 		https://ejs.co/
 		
+		ejs => Embedded Java script
 		
+		=========================================================================
+		
+		React Js is a front-end javascript library for building user interfaces based on components
+		Node is a server provides the run time environment 
+		Express is a back-end nodejs framwork for building web applications such as b2b and b2c
 
 		
-		
+        npm install nodemon
 
+        package.json => "start": "nodemon ./bin/www"	
 		
+		EJS 
+
+        Tag1: Scriptlet <% %>
+        Tag2: Declaration <%= %>
+        Tag3: Comment <%# %>
 		
+		Task:
 		
+		prepare get url like /employee which displays employee info
 		
+		Modules 
+		
+		1. Node js Built in Modules 
+		
+	       Ex: fs, http , url 
+		   
+		   Syntax: let varName = require('modulename')
+		            let http = require('http')
+					
+	    2. Third Party Modules => Installed on Node js server explicitly with npm tool
+		
+		   Ex: express, ejs , nodemon , mongodb
+		   
+		    Syntax : npm install/i <modulename>
+			
+		If developer installs any 3rd party module it will be stored in "node_modules" folder
+
+        3. User defined Modules 		
+            exports: varName : any []
+			
+			
+	===============================================================================
+	
+	    Initialising Node js Project
+		
+		npm init --yes <!-- generated package.json -->
+		
+		Form handling in ejs 
+		
+    ============================================================
+	
+	    Database => storing the data (persist) 
+		
+		SQL and NoSQL 
+		
+		SQL => Structured Query Language 
+		
+		schema => Plan or representation (fixed schema) 
+		table => Students => rollno,name,class,section,address,marks,fromwhichstandard
+		                     50 = 6 columns data , 1 column data 
+							 51 = 7 columns data
+		rows/columns
+		queries => fetch,delete,add,modify 
+		SQL, PostgreSQL, Oracle , MySQL 
+		table students
+		table1 course 
+		table2 dept 
+		RDBMS 
+		  
+		NoSQL => No Structure Maintained , MongoDB 
+		schema => dynamic schema 
+		           50 = 6 columns data
+				   51 = 7 columns data
+				   52 = 10 columns data
+                   53 = 5 columns data 	
+
+        JSON Data based (key value pairs)
+        Table        =======     Collections 	
+        rows         =====       Document 
+        columns      =====       Fields
+		Primary Key  =====       _id provided by MongoDB 
+		
+		Mongo Shell
+		MongoDB => Mongodb Compass, Robo 3T , nosqlbooster 
+		
+		https://www.mongodb.com/try/download/compass
+		
+		commands
+		
+		=> show dbs => currently available databases in the mongodb 
+		
+		=> use <databasename> 
+		
+		=> show collections
+		
+		NodeJs Server Interaction with MongoDB
+		
+		Node Modules 
+		+++++++++++++++++
+		1. http module 
+		2. fs 
+		3. url 
+		
+		Third Party Module
+		MongoClient Module => Nodejs establishes connection with MongoDb Server
+		
+		Step1: Install MongoDb Module on NodejS Server
+		       npm i mongodb
+			   
+		Step2: write one program(js) to connect with MongoDb server
+		
+		https://www.mongodb.com/try/download/community
+		
+		Advantages : 
+		
+		=> Schema less database 
+		=> Scalability 
+		=> faster to access the data 
+		
+		1. Create a database : use <databasename>
+		                       
+		2. Create a collection : db.createCollection("collectionname",options)
+		   options => memory size and indexing 
+		3. Create a document : db.collectionname.insert(document)
+		                        {})
+							   db.collectionname.insertOne({}) insert one document inside the collection
+							   db.collectionname.insertMany({}) insert many  document inside the collection
+		
+		db.test.insertMany([
+		{_id:1,firstName:"Savitha","lastName":"Ramesh",dob:"08-09-1993",email:"savi@gmail.com"},
+		{_id:2,firstName:"Kumari","lastName":"Rao",dob:"08-09-1994",email:"kumari@gmail.com"},
+		{_id:3,firstName:"Krishna","lastName":"Sri",dob:"08-09-1995",email:"sri@gmail.com"}
+		])
+		
+		db.test.find({})
+		db.test.find({bookId:1})
+		
+		db.test.find({firstName:"Kumari")}
+		db.test.find({firstName:"Krishna",lastName:"Sri"})
+		
+		mongoClient.connect(databaseUrl, callback acknowledgement)
+		
+		https://www.tutorialspoint.com/mongodb/mongodb_datatype.htm
+		
+		dbObject.collection('students').find({}) => return all the records
+		
+		insertOne()
+		insertMany()
+		find()
+		findOne()
+		deleteOne()
+		deleteMany()
+		updateOne()
+		updateMany()
+		
+		CRUD Create => insert() 
+		     Retrieval => find()
+			 Update => update()
+			 Delete => delete()
 		  
 	
 			  
