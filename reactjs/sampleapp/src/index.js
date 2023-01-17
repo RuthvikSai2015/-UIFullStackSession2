@@ -1,17 +1,22 @@
-import React from 'react';
+import React,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
 import Productcontainer from './components/products/Productcontainer';
+import Content from './components/content/Content';
+import Greet from './components/Greet';
+import {Welcome} from './components/Greet';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
-     
       <Header/>
+      <Content/>
           <Productcontainer/>
+          <Greet/>
+          <Welcome/>
       <Footer/>
     </div>
 );

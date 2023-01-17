@@ -5,7 +5,7 @@ export default function Productcart(props) {
     <div className="card" style={{width:"18rem"}}>
        <div className="card-body">
           <h5 className="card-title"> {props.name}  </h5>
-          <p className="card-text">   {props.emailid} </p>
+          <p className="card-text">   {props.price} </p>
        </div>
     </div>
 

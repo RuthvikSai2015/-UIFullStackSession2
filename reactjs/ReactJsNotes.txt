@@ -88,6 +88,14 @@ React JS
 	  Bootstrap => CDN 
 	 
 	  React Bootstrap => as a task 
+	  
+	  https://reactjs.org/docs/state-and-lifecycle.html
+	  
+	   3 ways
+  
+      1. <> </>
+      2. <Fragment> = Named Export 
+      3. <React.Fragment>
 
   		  
    
