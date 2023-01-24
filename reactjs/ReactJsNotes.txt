@@ -96,6 +96,66 @@ React JS
       1. <> </>
       2. <Fragment> = Named Export 
       3. <React.Fragment>
+	  
+	  Default and Named Export 
+	  
+	  React
+	  
+	  export const Fragment={}
+	  
+	  export default React ;
+	  
+	  React Props
+	  ======================================================
+	  
+	  props can be used to pass data from parent to child component
+	  
+	  attributes to components 
+	  
+	  1. Props can be destructuring for easy usage 
+	  
+	     destructuring of object in react-app
+		 
+		 const userData = {name:"Kumar",age:50}
+		 
+		 const {name,age} = userData;
+		 
+	   2. Props can have default values (default Parent will be taken ,if Parent is not specified child will be taken)
+	   3. Props will take default value as true if no value is passed 
+	   4. Passing objects as props, Spread Operator 
+	   
+	   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+       =====================================================================================
+
+       Conditional Rendering
+	   
+	   Based on Some Condition we want to show our content or not
+
+       1. Show or Hide Component
+       2. Implementing the Role Based Permission Level(End User , Agents ,Admin)
+       3. Toggling Functionalities 
+
+       Task : age>18 <DrivingLicense/> 
+	   
+	  {props.age>18 && <EligibleForDrivingLicense/>}
+	  
+	  const value = true && "license"; // license 
+	  
+	  true && true => true 
+	  true && false => false
+	  false && true => false
+	  false && false => false 
+	  
+	  =================================================================
+	  
+	  React Events 
+	  
+	  
+	  
+	  
+	  
+	  
 
   		  
    
