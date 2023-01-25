@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 
 export default function Useeffecthook() {
@@ -5,26 +6,20 @@ export default function Useeffecthook() {
     const [content, setContent] = useState([]);
 
     function fetchData() {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://localhost:3002/students')
             .then(response => response.json())
             .then(data => setContent(data))
-            .catch();
+            .catch(error => console.log(error));
+    //     axios.get('https://jsonplaceholder.typicode.com/users')
+    //    // .then(response => response.json())
+    //     .then(data => setContent(data))
+    //     .catch(error => console.log(error));
+
     }
     return (
         <>
-            <ul>
-                {
-                    content.map((user) => {
-                        return (
-                                <li><p>{user.id}</p>
-                                <p>{user.name}</p>
-                               </li>
-                        )
-                    })
-                }
-            </ul>
-            {/* <ul><li></li></ul> */}
-            <button onClick={() => fetchData()}>Fetch the Data </button>
+        <button onClick={() => fetchData()}>Fetch Data </button>
+           
         </>
     )
 }

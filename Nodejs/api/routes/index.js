@@ -1,7 +1,7 @@
 var express = require('express');
 var person = require('./person');
 var router = express.Router();
-
+const Students = require('../routes/connection').Students;
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -36,4 +36,11 @@ router.get('/home',function(req,res){
  //loop Array of objects 
   res.render("home",{personAge:personAge,personName:personName,hobbies:hobbies,details:details});
 })
+
+router.get('/students',function(req,res){
+    Students.find({}).exec(function(error,data){
+      return res.status(200).send({students:data})
+    })
+})
+
 module.exports = router;

@@ -151,8 +151,52 @@ React JS
 	  
 	  React Events 
 	  
+	  <button onclick='onButtonClick()'>Click me </button>
 	  
+	  <script>
+	  function onButtonClick(){
+	     console.log("Button is clicked");
+	  }
+	  </script>
 	  
+	  JSX
+	  <button onClick={onButtonClick}> Click Me </button>
+	  
+	  State Concept
+	  
+	  1. Create the Object and initiliase
+	  
+	  2. Access the State decalared
+	  
+	  3. Modify the State
+	  
+	  State => Moving , Freezed, Changed , Rejected 
+	  
+	  ===================================================================
+	  
+	  Connecting React to Express
+	  
+	  1. npm install mongoose
+	  2. give database url
+	  3. create connection 
+	  4. define model(schema)
+	  
+	  React 
+	  npx create-react-app client
+	  
+	  Express
+	  npx express-generator api
+	  
+	  Modify the Port Number : 2 options 
+	  
+	  1. modify the port number for express-generator
+	  2. modify the port number for react
+	  
+	  => Goto api folder => bin => open www file 15th line number change the port number to 3002
+	  
+	  React => Package.json
+		"start": "set PORT=3003 && react-scripts start",
+		
 	  
 	  
 	  
