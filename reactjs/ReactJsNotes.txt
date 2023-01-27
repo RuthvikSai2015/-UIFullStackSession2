@@ -170,7 +170,7 @@ React JS
 	  
 	  3. Modify the State
 	  
-	  State => Moving , Freezed, Changed , Rejected 
+	  State => Moving , Updated , Freezed, Changed , Rejected 
 	  
 	  ===================================================================
 	  
@@ -197,9 +197,160 @@ React JS
 	  React => Package.json
 		"start": "set PORT=3003 && react-scripts start",
 		
+	  Mistakes usually we do
+	  1. Once the router is created , we need to register in app.js
+	  2. CORS issue
+	     npm install cors
+		 import it in app.js file
+		 register it in app.js
+		 
+	=========================================================================
+	
+	  fetch vs axios
+	  
+	  fetch is a browser api 
+	  axios is third party library 
+	  npm install axios 
+	  
+	   fetch('http://localhost:3002/students') //pass url
+            .then(response => response.json())  // Conversion
+            .then(data => setContent(data));  //setting the data 
+            
+	   in axios we will be avoiding one of the condition
+	   
+	   axios.get('http://localhost:3002/students')
+	       .then(response => setContent(response)); //explicit conversion 
+		   
+	   in axios explicit conversion happens in fetch there is no conversion
+	   
+	   2 differences
+	   
+	   1. while receiving the data
+	   2. while sending the data 
+	   
+	   formData = {name:"savitha",age:23,dob:'08/09/1991'}
+	   fetch(url,{
+	         method:"POST"
+	         body : JSON.stringify(formData) //conversion
+	   }
+	   
+	   axios({
+	        url:"",
+	        method:"POST",
+			data : formData // no conversion
+	   })
+	   
+	   ======================================================================
+	   
+	   React Hooks
+	   
+	   Functional Components 
+	        => one way (props)
+			
+	   Class Components 
+	        => state-and-lifecycle
+			
+	   React Life cycle methods
+	   Mounting => While Rendering the Component
+	   
+	   componentDidMount(){
+	     //mount
+	   }
+	   Updating => State updated 
+	   componentDidUpdate(){
+	     //update
+	   }
+	   
+	   UnMounting => Remove the Component from dom 
+	   
+	   componentWillUnmount(){
+	     //removal 
+	   }
 	  
 	  
-	  
+	   Disadv : messing the code btw the lifecycle methods 
+	   
+	   making the function dynamic through hooks 
+	   
+	   Hooks are nothing but functions that let you "hook into " React features(state and 
+	   
+	   lifecycle methods) in Functional Component 
+	   
+	   Hooks was introduced in 16.8 versions
+	   
+	   const [count,setCount] = useState();
+	   
+	   useEffect hook 
+	   Life cycle methods we are using this hook
+	   
+	   componentDidMount(){
+	     //mount
+		 useEffect(() => {
+	   
+	   })
+	   }
+	   
+	   
+	   Updating => State updated 
+	   componentDidUpdate(){
+	     //update
+		   useEffect(() => {
+             console.log("on update phase");
+         },[count]);
+	   }
+	   
+	   UnMounting => Remove the Component from dom 
+	   
+	   componentWillUnmount(){
+	     //removal 
+	   }
 
-  		  
+       React Routing 
+	   
+	   Routing(redirect) to particular component based on the user requirement
+	   we are not refreshing the page only re-rendering the component 
+	   
+	   install third party library called
+	   react-router-dom 
+	   
+	   import {BrowserRouter , Routes , Route } from "react-router-dom";
+	   
+	   <BrowserRouter>
+	   
+	   we need to wrap our app with Browser Router so that our application ensures for
+	   routing
+	   
+	   Routes is a parent which holds all the router
+	   Route is a children of Routes , we can have 'n' Route 
+	   
+	   ==================================================================
+	   
+	   React Styling
+	   
+	   <div class="App"> <!-- HTML -- >
+	   <div className = "App"> <!--  React -->
+	   
+	   Html
+	   <div style="background-color:red,color:white">
+	   
+	   JS
+	   <div style={{backgroundColor:"red",color:"white"}}
+	   
+	   1. Internal Styling
+	   2. Styled Components 
+	       third party library (npm install styled-components) 
+	   3. CSS modules 
+	   4. External Style Sheets (import './header.css')
+	   
+	   
+	  
+	   Full Stack Developer Role 
+	   
+  	   1. UI/UX figma or adobe tools
+	   2. understand business workflow
+	   3. Dont assume anything 
+	   4. expected input and output 
+	   5. which tools we need to use 
+	   6. performance app
+	   7. Code Review and refactoring code 
    

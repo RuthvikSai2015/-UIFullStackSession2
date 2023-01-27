@@ -43,4 +43,13 @@ router.get('/students',function(req,res){
     })
 })
 
+router.post('/addStudent',function(req,res){
+  console.log("add student",req.body);
+    new Students(req.body).save(function (err, items) {
+      Students.find({ }).exec(function (err, data) {
+          res.status(200).send({ students: data });
+      })
+  });
+})
+
 module.exports = router;

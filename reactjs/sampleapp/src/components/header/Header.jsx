@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 
 function Header() {
    return (
@@ -12,7 +13,7 @@ function Header() {
                <div className="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul className="navbar-nav">
                      <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="login">Home</a>
+                        <a className="nav-link active" aria-current="page" href="/home">Home</a>
                      </li>
                      <li className="nav-item">
                         <a className="nav-link" href="login">Features</a>

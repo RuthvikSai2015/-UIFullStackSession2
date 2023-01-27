@@ -17,9 +17,8 @@ export default function Productcontainer(props) {
         </div>
         {props.name}
         <div className="col-md-6">
-          <Productadd />
-          <Productadd />
-           <Productadd />
+           <Productadd /> 
+        
         </div>
       </div>
     </div>

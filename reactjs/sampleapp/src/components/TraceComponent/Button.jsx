@@ -6,7 +6,7 @@ export default function Button() {
     }
     return (
         <>
-            <button onClick={onButtonClick}> Click Me </button>
+            <button style={{backgroundColor:"blue"}}onClick={onButtonClick}> Click Me </button>
         </>
     )
 }
